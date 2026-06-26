@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Place | GOEN LOOP</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#6F7762" />
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="header-logo">GOEN LOOP</a>
+    <div class="language"><button data-lang="en" class="active">EN</button><span>|</span><button data-lang="ja">日本語</button></div>
+  </header>
+  <main class="place-page">
+    <section class="place-detail">
+      <div class="container narrow">
+        <a class="back-link" href="map.html">← Back to Walking Map</a>
+        
+        <p id="place-type" class="category"></p>
+        <h1 id="place-title"></h1>
+        <p id="place-japanese" class="japanese-name"></p>
+        <p id="place-walk" class="walk"></p>
+        <p id="place-description" class="place-description"></p>
+        <p id="place-theme" class="theme-line"></p>
+        <a id="place-map" href="#" target="_blank" class="button">Open in Google Maps</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><h3>GOEN LOOP</h3><nav><a href="index.html">Home</a><a href="map.html">Map</a><a href="about.html">About</a></nav><p>© 2026 MAME TO CHA</p></footer>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/language.js"></script>
+  <script src="assets/js/places.js"></script>
+</body>
+</html>

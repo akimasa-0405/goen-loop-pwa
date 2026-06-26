@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><img src="assets/images/logo-transparent.png" alt="GOEN LOOP" class="hero-logo"></title>
+  <meta name="description" content="A small journey through Kamakura, inspired by matcha and meaningful connections." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#6F7762" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-512.png" />
+  <link rel="icon" href="assets/icons/favicon.png" />
+</head>
+<body>
+  <div class="splash" id="splash"><img src="assets/images/goen-loop-logo.png" alt="GOEN LOOP"></div>
+  <header class="header">
+    <a href="index.html" class="header-logo">GOEN LOOP</a>
+    <div class="language">
+      <button data-lang="en" class="active">EN</button>
+      <span>|</span>
+      <button data-lang="ja">日本語</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero home-hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-inner">
+        <img class="hero-logo" src="assets/images/goen-loop-logo.png" alt="GOEN LOOP">
+        <h1 data-i18n="hero_title">Begin your Kamakura journey with a cup of matcha.</h1>
+        <p class="hero-sub" data-i18n="hero_sub">Every journey begins with a cup.</p>
+        <div class="scroll"><span>↓</span><small>Scroll</small></div>
+      </div>
+    </section>
+
+    <section class="concept reveal">
+      <div class="container narrow">
+        <h2 data-i18n="concept_title">A small journey through Goen.</h2>
+        <p data-i18n="concept_1">Goen Loop is an experience that begins with matcha and leads you to discover new connections with Kamakura.</p>
+        <p data-i18n="concept_2">When you return your cup, you receive a ¥5 coin, a small symbol of goen.</p>
+        <p data-i18n="concept_3">In Japan, ¥5 is cherished as a coin that represents meaningful connections and good fortune.</p>
+        <p data-i18n="concept_4">Carry it with you, visit a shrine or temple you feel drawn to, and experience your own connection with Kamakura.</p>
+        <img class="section-image" src="assets/images/concept-bg.png" alt="A quiet path in Kamakura">
+      </div>
+    </section>
+
+    <section class="journey reveal">
+      <div class="container narrow center">
+        <h2 data-i18n="journey_title">How Goen Loop Works</h2>
+        <div class="timeline">
+          <div class="step"><div class="icon">🍵</div><p data-i18n="step_1">Enjoy matcha</p></div>
+          <div class="line"></div>
+          <div class="step"><div class="icon">♻️</div><p data-i18n="step_2">Return your cup</p></div>
+          <div class="line"></div>
+          <div class="step"><div class="icon">🫶</div><p data-i18n="step_3">Receive goen</p></div>
+          <div class="line"></div>
+          <div class="step"><div class="icon">⛩️</div><p data-i18n="step_4">Visit a shrine or temple</p></div>
+          <div class="line"></div>
+          <div class="step"><div class="icon">🙏</div><p data-i18n="step_5">Make a wish</p></div>
+          <div class="line"></div>
+          <div class="step"><div class="icon">◎</div><p data-i18n="step_6">Let the connection continue</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta reveal">
+      <div class="container narrow center">
+        <h2 data-i18n="cta_title">Begin your walk through Kamakura.</h2>
+        <a href="map.html" class="button" data-i18n="cta_button">Start walking</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <h3>GOEN LOOP</h3>
+    <nav><a href="map.html">Map</a><a href="about.html">About</a><a href="#">Instagram</a></nav>
+    <p>© 2026 MAME TO CHA</p>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/language.js"></script>
+</body>
+</html>

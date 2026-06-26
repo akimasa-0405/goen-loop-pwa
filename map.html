@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Map | GOEN LOOP</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#6F7762" />
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="header-logo">GOEN LOOP</a>
+    <div class="language"><button data-lang="en" class="active">EN</button><span>|</span><button data-lang="ja">日本語</button></div>
+  </header>
+  <main class="map-page">
+    <section class="page-hero">
+      <div class="container narrow">
+        <h1 data-i18n="map_title">Kamakura Walking Map</h1>
+        <p data-i18n="map_lead">Explore shrines and temples near MAME TO CHA.</p>
+      </div>
+    </section>
+    <section class="map-section">
+      <div class="container">
+        <div class="map-frame">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1sMDrufY_oO2lJjktSCqlM5s1gbh3ZG8&ehbc=2E312F" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="places-section">
+      <div class="container narrow">
+        <h2 data-i18n="places_title">Places</h2>
+        <div class="filter-tabs"><button data-filter="all" class="active">All</button><button data-filter="shrine">Shrines</button><button data-filter="temple">Temples</button></div>
+        <div id="places-list" class="places-list"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><h3>GOEN LOOP</h3><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="#">Instagram</a></nav><p>© 2026 MAME TO CHA</p></footer>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/language.js"></script>
+  <script src="assets/js/places.js"></script>
+</body>
+</html>

@@ -74,17 +74,29 @@ async function renderDetail(){
   if(!p) return;
 
   document.title = `${label(p,'name')} | GOEN LOOP`;
-  document.getElementById('place-image').src = p.image || 'assets/images/placeholder.jpg';
-  document.getElementById('place-image').alt = label(p,'name');
-  document.getElementById('place-type').textContent = p.type;
+
+  const type = document.getElementById('place-type');
+  if (type) type.textContent = p.type;
+
   title.textContent = label(p,'name');
-  document.getElementById('place-japanese').textContent = p.name_ja;
-  document.getElementById('place-walk').textContent = walkText(p);
-  document.getElementById('place-description').textContent = label(p,'description');
-  document.getElementById('place-theme').textContent = label(p,'theme');
+
+  const japanese = document.getElementById('place-japanese');
+  if (japanese) japanese.textContent = p.name_ja;
+
+  const walk = document.getElementById('place-walk');
+  if (walk) walk.textContent = walkText(p);
+
+  const description = document.getElementById('place-description');
+  if (description) description.textContent = label(p,'description');
+
+  const theme = document.getElementById('place-theme');
+  if (theme) theme.textContent = label(p,'theme');
+
   const link = document.getElementById('place-map');
-  link.href = mapsUrl(p);
-  link.textContent = lang() === 'ja' ? 'Google Mapsで開く' : 'Open in Google Maps';
+  if (link) {
+    link.href = mapsUrl(p);
+    link.textContent = lang() === 'ja' ? 'Google Mapsで開く' : 'Open in Google Maps';
+  }
 }
 
 document.querySelectorAll('.filter-tabs button').forEach(btn => {

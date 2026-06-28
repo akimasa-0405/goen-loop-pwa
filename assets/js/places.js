@@ -80,6 +80,17 @@ async function renderDetail(){
 
   title.textContent = label(p,'name');
 
+  const image = document.getElementById('place-image');
+  if (image) {
+    if (p.image) {
+      image.src = p.image;
+      image.alt = label(p,'name');
+      image.hidden = false;
+    } else {
+      image.hidden = true;
+    }
+  }
+
   const japanese = document.getElementById('place-japanese');
   if (japanese) japanese.textContent = p.name_ja;
 
